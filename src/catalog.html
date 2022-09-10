@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Katalog"
+})
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page_inner">
+			<div class="page__header">
+				<div class="page__container">
+					<h1 class="page__title title">Noże do mięsa</h1>
+					<nav class="page__breadcrumbs breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="" class="breadcrumbs__link">Strona główna</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span href="" class="breadcrumbs__current">Noże do mięsa</span>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+			<div class="catalog">
+				<div class="catalog__container">
+					<div class="catalog__body">
+						<div class="catalog__filter filter-catalog">
+							<button type="button" class="filter-catalog__title">Filtrowanie produktów</button>
+							<div data-spollers class="filter-catalog__items">
+								<div class="filter-catalog__price price-filter">
+									<button type="button" data-spoller class="price-filter__title _icon-spoiler-arrow">Cena</button>
+									<div data-range class="price-filter__body">
+										<div class="price-filter__inputs">
+											<input data-range-from="0" autocomplete="off" type="text" value="500" name="form[]" class="price-filter__input">
+											<input data-range-to="5000" autocomplete="off" type="text" value="1000" name="form[]" class="price-filter__input">
+										</div>
+										<div data-range-item class="price-filter__range"></div>
+									</div>
+								</div>
+								<div class="filter-catalog__item item-filter-catalog">
+									<button type="button" data-spoller class="item-filter-catalog__title _icon-spoiler-arrow">Produkcja</button>
+									<div class="item-filter-catalog__body">
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_1" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="checkbox__label"><span class="checkbox__text">AiR <small>(250)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_2" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_2" class="checkbox__label"><span class="checkbox__text">Bułat Warior <small>(87)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_3" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_3" class="checkbox__label"><span class="checkbox__text">Bułat Maverick<small>(26)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_4" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_4" class="checkbox__label"><span class="checkbox__text">ZZOSS <small>(119)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_5" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_5" class="checkbox__label"><span class="checkbox__text">ZIC <small>(14)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_6" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_6" class="checkbox__label"><span class="checkbox__text">ZlatProfit <small>(33)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_7" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_7" class="checkbox__label"><span class="checkbox__text">ZOK <small>(104)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_8" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_8" class="checkbox__label"><span class="checkbox__text">NBK <small>(30)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_9" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_9" class="checkbox__label"><span class="checkbox__text">NICON <small>(92)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_10" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_10" class="checkbox__label"><span class="checkbox__text">Rewolwerowiec <small>(74)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_11" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_11" class="checkbox__label"><span class="checkbox__text">Rusznikarz <small>(66)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_12" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_12" class="checkbox__label"><span class="checkbox__text">Weapon of victory <small>(12)</small></span></label>
+										</div>
+										<div class="item-filter-catalog__checkbox checkbox">
+											<input id="c_13" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_13" class="checkbox__label"><span class="checkbox__text">STEEL-M <small>(88)</small></span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog__content">
+							<div class="catalog__control">
+								<select name="form[]" class="control">
+									<option value="1" selected>Według popularności</option>
+									<option value="2">Według nazwy</option>
+									<option value="3">Według popularności</option>
+									<option value="4">Według ceny</option>
+								</select>
+							</div>
+							<div class="catalog__products">
+								<article class="product-card">
+									<div class="product-card__sale">
+										50%
+									</div>
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+								   <article class="product-card">
+									<a href="" class="product-card__image">
+										<span class="product-card__item-image-ibg product-card__item-image-ibg_contain">
+										<img src="@img/product-card/image.jpg" alt="Obrazek">
+									   </span>
+									   </a>
+									   <div class="product-card__body">
+										   <h4 class="product-card__title">
+											   <a href="" class="product-card__link-title">Nóż Bóbr</a>
+										   </h4>
+										   <div class="product-card__info info-product-card">
+											   <div class="info-product-card__size">95х18</div>
+											   <div class="info-product-card__materials">Orzech włoski, Aluminium</div>
+										   </div>
+										   <div class="product-card__rating rating rating_set">
+											   <div class="rating__body">
+												   <div class="rating__active"></div>
+												   <div class="rating__items">
+													   <input type="radio" class="rating__item" value="1" name="rating">
+													   <input type="radio" class="rating__item" value="2" name="rating">
+													   <input type="radio" class="rating__item" value="3" name="rating">
+													   <input type="radio" class="rating__item" value="4" name="rating">
+													   <input type="radio" class="rating__item" value="5" name="rating">
+												   </div>
+											   </div>
+											   <div class="rating__value">3.6</div>
+											   <div class="rating__info">12 ocen</div>
+										   </div>
+										   <div class="product-card__footer">
+											   <div class="product-card__price">300 zl.</div>
+											   <a href="" class="product-card__compare _icon-compare"></a>
+											   <a href="" class="product-card__favorite _icon-favorite"></a>
+										   </div>
+										   <button type="button" class="product-card__cart button"><span class="_icon-cart">Do koszyka</span></button>
+									   </div>
+								   </article>
+							</div>
+							<div class="catalog__footer">
+								<a href="" class="catalog__more button button_border">Pokaż więcej</a>
+								<div class="catalog__pagging pagging">
+									<button disabled type="button" class="pagging__arrow pagging__arrow_left _icon-arrow_bottom"></button>
+									<ul class="pagging__list">
+										<li class="pagging__item">
+											<a href="" class="pagging__link _active">1</a>
+										</li>
+										<li class="pagging__item">
+											<a href="" class="pagging__link">2</a>
+										</li>
+										<li class="pagging__item">
+											<a href="" class="pagging__link">3</a>
+										</li>
+										<li class="pagging__item">
+											<a href="" class="pagging__link">...</a>
+										</li>
+										<li class="pagging__item">
+											<a href="" class="pagging__link">15</a>
+										</li>
+									</ul>
+									<button type="button" class="pagging__arrow pagging__arrow_right _icon-arrow_bottom"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
